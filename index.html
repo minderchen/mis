@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1730">
+  <title>MIS Course | Interactive Tutorials</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #172640;
+      background: #f4f7fb;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.5; }
+    .topbar { background: #0b1730; color: #fff; padding: 18px 24px; }
+    .topbar-inner, main { width: min(100% - 48px, 1050px); margin: 0 auto; }
+    .topbar-inner { width: min(100%, 1050px); display: flex; align-items: center; gap: 12px; }
+    .brand-mark {
+      display: grid; place-items: center; width: 38px; height: 38px;
+      border-radius: 11px; background: linear-gradient(140deg, #4b7aff, #30d4d5);
+      font-size: 15px; font-weight: 800;
+    }
+    .brand { font-size: 15px; font-weight: 800; letter-spacing: .04em; }
+    .brand span { display: block; color: #aabbda; font-size: 11px; font-weight: 500; letter-spacing: .04em; }
+    main { padding: 56px 0 80px; }
+    .eyebrow { margin: 0 0 10px; color: #416dcb; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(32px, 5vw, 48px); line-height: 1.12; letter-spacing: -.04em; }
+    .intro { max-width: 610px; margin: 16px 0 0; color: #61738b; font-size: 16px; }
+    .section-heading { margin: 48px 0 16px; font-size: 20px; letter-spacing: -.02em; }
+    .card {
+      display: block; max-width: 680px; padding: 28px; color: inherit; text-decoration: none;
+      background: #fff; border: 1px solid #e3eaf2; border-radius: 16px;
+      box-shadow: 0 9px 30px rgba(23, 45, 78, .045);
+    }
+    .card:hover { border-color: #9db8f5; box-shadow: 0 12px 32px rgba(23, 45, 78, .1); }
+    .card:focus-visible { outline: 3px solid #245cea; outline-offset: 4px; }
+    .tag { display: inline-block; padding: 5px 9px; border-radius: 100px; background: #e8f0ff; color: #2b60d7; font-size: 11px; font-weight: 800; }
+    .card h3 { margin: 16px 0 8px; font-size: 22px; line-height: 1.25; letter-spacing: -.02em; }
+    .card p { margin: 0; color: #61738b; font-size: 14px; }
+    .card-action { display: inline-block; margin-top: 22px; color: #245cea; font-size: 14px; font-weight: 750; }
+    @media (max-width: 600px) {
+      .topbar { padding: 16px 20px; }
+      main { width: calc(100% - 40px); padding: 40px 0 60px; }
+      .section-heading { margin-top: 36px; }
+      .card { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-mark" aria-hidden="true">MIS</div>
+      <div class="brand">MIS COURSE<span>Interactive learning</span></div>
+    </div>
+  </header>
+  <main>
+    <p class="eyebrow">Course resources</p>
+    <h1>Interactive tutorials</h1>
+    <p class="intro">Explore management information systems through hands-on activities and simulations.</p>
+
+    <section aria-labelledby="tutorials-heading">
+      <h2 class="section-heading" id="tutorials-heading">Available tutorials</h2>
+      <a class="card" href="erp_order_to_cash_simulator.html">
+        <span class="tag">ERP simulation</span>
+        <h3>Nexus ERP Lab | Order-to-Cash Interactive Simulator</h3>
+        <p>Explore how sales, inventory, warehouse, and finance connect throughout the order-to-cash process.</p>
+        <span class="card-action">Open simulator <span aria-hidden="true">&rarr;</span></span>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
